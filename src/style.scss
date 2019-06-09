@@ -1,0 +1,191 @@
+@import url("https://fonts.googleapis.com/css?family=Oswald:400,700|Roboto+Mono:400,700|Roboto:400,700&display=swap&subset=latin-ext");
+
+/*
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Roboto Mono', monospace;
+*/
+$Roboto : 'Roboto', sans-serif;
+$RobotoMono : 'Roboto Mono', monospace;
+$Oswald : 'Oswald', sans-serif;
+$mor : #430675;
+$kavunici : #e77224;
+
+body,html{
+    padding:0px;
+    margin:0px;    
+    width: 100%;
+    height: 100%;
+    font-family: $Roboto;
+    background-color:#5d9bce;
+}
+.background{
+    background-color: #ffffff;
+    width: 1110px;
+    height: 720px;
+    display: block;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    box-shadow: 0px 20px 40px #2c2c2c63;
+
+    .corners{
+        position: absolute;
+        font-weight: bold;
+        /*padding: 0.5em 1.5em;*/
+        font-size: 3.5em;
+    }
+
+    .rWord{
+        left:100px;
+        top:50px;
+        
+        color:$kavunici;
+    }
+    .oWord{
+        right: 100px;
+        top:50px;
+         
+        color:$mor;
+    }
+    .wWord{
+        right: 100px;
+        bottom: 50px;
+        
+        color:$kavunici;
+    }
+    .ihp{
+        left:100px;
+        bottom:50px;
+        
+        /*width: 100px;*/
+        color:$mor;
+    }
+    .explore{
+        //transform:rotate3d(0,0,1,270deg);
+        transform: rotate(270deg);
+        font-size:12px;
+        font-family: $Roboto;
+        font-weight: bold;
+        color:$kavunici;
+        letter-spacing: 2px;
+        position: absolute;
+        left: 80px;
+        bottom: 390px;
+    }
+    .explore::before{
+        content: ' ';
+        height: 2px;
+        background-color: $kavunici;
+        width: 60px;
+        display: block;
+        bottom: 7px;
+        position: absolute;
+        left: -85px;
+        letter-spacing: 2px;
+    }
+    .origin{
+        position: absolute;
+        width: 650px;
+        background: transparent;
+        right: 150px;
+        top: 50%;
+        transform: translateY(-50%);
+        height: 80%;
+        display: block;
+        font-size: 0px;
+
+        .sutun{
+            height: 100%;
+            position: relative;
+            overflow: hidden;
+
+            .resim1{
+                width: 350px;
+                height: 350px;
+                display: block;
+                -webkit-clip-path: circle(47% at 62% 50%);
+                clip-path: circle(47% at 62% 50%);
+                background-image: url(/assets/redgarden.jpg);
+                background-size: cover;
+                position: absolute;
+                right: 0px;
+                bottom: 60px;
+            }
+            .resim2{
+                width: 350px;
+                height: 350px;
+                display: block;
+                -webkit-clip-path: ellipse(150px 150px at 50% 50%);
+                clip-path: ellipse(150px 150px at 50% 50%);
+                background-image: url(/assets/redgarden2.jpg);
+                background-size: cover;
+                position: absolute;
+                top: 35px;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+            .resim3{
+                width: 250px;
+                height: 350px;
+                display: block;
+                -webkit-clip-path: circle(46% at 30% 62%);
+                clip-path: circle(46% at 30% 62%);
+                background-image: url(/assets/redgarden3.jpg);
+                background-size: cover;
+                position: absolute;
+                bottom: 45px;
+                right: 20px;
+            }
+        }
+         
+        .left{
+            display: inline-block;
+            width: 300px; 
+            border-right: 2px solid $mor;           
+
+            span{
+                font-size: 128px;
+                color:$mor;
+                font-family: $Roboto;
+                font-weight: bold;
+                right: -24px;
+                position: absolute;
+                top: 112px;
+            }
+        }
+        .center{
+            display: inline-block;
+            width: 210px;
+            border-right: 2px solid $mor;
+            span{
+                font-size: 128px;
+                color:$mor;
+                font-family: $Roboto;
+                font-weight: bold;
+                right: -24px;
+                position: absolute;
+                bottom: 130px;
+            }
+            .mesaj{
+                font-size: 14px;
+                bottom: 40px;
+                left: 20px;
+                position: absolute;
+                display: block;
+            }
+        }
+        .right{
+            display: inline-block;
+            width: 136px;
+            .mesaj{
+                font-size: 14px;
+                top: 40px;
+                left: 20px;
+                position: absolute;
+                display: block;
+            }
+        }
+    }
+}
