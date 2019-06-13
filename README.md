@@ -1,5 +1,7 @@
 # FE3
-Frontend referansları 3
+Frontend referansları 3 (NonResponsive Tasarım)
+
+Kullanılan kütüphane ve teknolojiler : scss, google fonts
 
 [Web -> https://ergintiravoglu.github.io/FE3/](https://ergintiravoglu.github.io/FE3/ "Web sitesi")
 
